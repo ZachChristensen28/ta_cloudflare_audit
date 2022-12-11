@@ -44,7 +44,7 @@ fields = [
         'backfill',
         required=False,
         encrypted=False,
-        default=7,
+        default='7',
         validator=None
     ),
 

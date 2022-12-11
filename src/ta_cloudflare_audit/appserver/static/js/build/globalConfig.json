@@ -339,6 +339,7 @@
                             "label": "Backfill Range (days)",
                             "type": "text",
                             "help": "Enter the amount of days to look back on the initial run. (Default 7)",
+                            "defaultValue": "7",
                             "options": {
                                 "placeholder": "7"
                             },
