@@ -14,7 +14,7 @@ def collect_events(helper, ew):
     helper.set_log_level(log_level)
 
     cf_account = helper.get_arg('cloudflare_credentials')
-    cf_token = cf_account['password']
+    cf_token = cf_account['api_token']
     stanza = str(helper.get_input_stanza_names())
 
     proxy = helper.get_proxy()
@@ -83,11 +83,12 @@ def collect_events(helper, ew):
 
             if not response_message['result']:
                 event_log = zts_logger(
-                        msg='No events found since last run ({})'.format(last_time),
-                        action='aborted',
-                        event_type=event_type,
-                        stanza=stanza,
-                        last_run_time=last_time
+                    msg='No events found since last run ({})'.format(
+                        last_time),
+                    action='aborted',
+                    event_type=event_type,
+                    stanza=stanza,
+                    last_run_time=last_time
                 )
                 helper.log_info(event_log)
                 return False
@@ -125,4 +126,3 @@ def collect_events(helper, ew):
 
     # Get Audit Logs
     audit_logs()
-

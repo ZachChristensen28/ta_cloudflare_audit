@@ -70,11 +70,13 @@ def checkpointer(helper, account_name, set_checkpoint=False):
 
         return old_state
     else:
+        backfill = helper.get_arg('backfill')
         today = datetime.date.today()
-        default_time = today - datetime.timedelta(days=DEFAULT_LAST_TIME)
+        default_time = today - datetime.timedelta(days=int(backfill))
         last_time = default_time.strftime(DEFAULT_TIME_FORMAT)
         event_log = zts_logger(
-            msg='Checkpoint not found, defaulting to {} days ago ({}).'.format(DEFAULT_LAST_TIME, last_time),
+            msg='Checkpoint not found, defaulting to {} days ago ({}).'.format(
+                backfill, last_time),
             action='failure',
             event_type=event_type,
             stanza=account_name
@@ -158,4 +160,3 @@ def sendit(helper, url, method, verify, use_proxy, stanza, headers=None, payload
             details=e
         )
         return result, message
-

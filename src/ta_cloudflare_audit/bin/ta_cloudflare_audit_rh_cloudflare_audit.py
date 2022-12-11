@@ -40,6 +40,13 @@ fields = [
         default=None,
         validator=None
     ),
+    field.RestField(
+        'backfill',
+        required=False,
+        encrypted=False,
+        default=7,
+        validator=None
+    ),
 
     field.RestField(
         'disabled',

@@ -333,6 +333,29 @@
                             "options": {
                                 "referenceName": "account"
                             }
+                        },
+                        {
+                            "field": "backfill",
+                            "label": "Backfill Range (days)",
+                            "type": "text",
+                            "help": "Enter the amount of days to look back on the initial run. (Default 7)",
+                            "options": {
+                                "placeholder": "7"
+                            },
+                            "required": false,
+                            "validators": [
+                                {
+                                    "type": "regex",
+                                    "pattern": "^\\d*$",
+                                    "errorMsg": "Must be a valid integer."
+                                },
+                                {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "errorMsg": "Length of input name should be between 1 and 100"
+                                }
+                            ]
                         }
                     ]
                 }
