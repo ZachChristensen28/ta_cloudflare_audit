@@ -293,6 +293,7 @@
                             "type": "text",
                             "required": true,
                             "help": "Time interval of input in seconds, minimum 300s (5 minutes) or a valid cron schedule.",
+                            "defaultValue": "1-56/5 * * * *",
                             "options": {
                                 "placeholder": "1-56/5 * * * *"
                             },
