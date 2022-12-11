@@ -1,3 +1,4 @@
+@placement search-head
 [base]
 builder_version = <string>
 builder_build = <string>
