@@ -14,7 +14,7 @@ TBD
 
 ## Disclaimer
 
-> *This Technical Add-on (TA) is __not__ affiliated with [__Cloudflare, Inc.__](https://www.cloudflare.com/) and is not sponsored or sanctioned by the Cloudflare team. As such, the included documentation does not contain information on how to get started with Cloudflare. Please visit [https://www.cloudflare.com/](https://www.cloudflare.com//) for more information about Cloudflare.*
+> *This Technical Add-on (TA) is __not__ affiliated with [__Cloudflare, Inc.__](https://www.cloudflare.com/) and is not sponsored or sanctioned by the Cloudflare team. Cloudflare is and the Cloudflare web badges are [registered trademarks](https://www.cloudflare.com/trademark/) of Cloudflare, Inc. Please visit [https://www.cloudflare.com/](https://www.cloudflare.com/) for more information about Cloudflare.*
 
 ## About
 
