@@ -33,7 +33,7 @@ Account | Account Settings | Read
 
 Info | Description
 ------|----------
-ta_cloudflare_audit | 0.0.1 - Splunkbase - TBD \| [GitHub](https://github.com/ZachChristensen28/ta_cloudflare_audit)
+ta_cloudflare_audit | 0.0.2 - Splunkbase - TBD \| [GitHub](https://github.com/ZachChristensen28/ta_cloudflare_audit)
 
 ## Issues or Feature Requests
 
