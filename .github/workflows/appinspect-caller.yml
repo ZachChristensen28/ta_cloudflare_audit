@@ -1,4 +1,4 @@
-name: Splunk Appinspect Caller
+name: Splunk Appinspect
 on:
   pull_request:
     branches:
